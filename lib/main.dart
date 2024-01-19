@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
 }
 
 ThemeData _buildStylingTheme(){
-  final base = ThemeData.light(useMaterial3: true);
+  final ThemeData base = ThemeData.light(useMaterial3: true);
   return base.copyWith(
-      colorScheme: const ColorScheme(
+      colorScheme: base.colorScheme.copyWith(
           background: Colors.white,
           brightness: Brightness.light,
           primary: kStylingRed800,
@@ -41,12 +41,14 @@ ThemeData _buildStylingTheme(){
           surface: Colors.white,
           onSurface: kStylingBlack900,
       ),
-      textTheme: TextTheme(
+      textTheme: base.textTheme.copyWith(
         displayLarge: base.textTheme.displayLarge?.copyWith(
           fontWeight: FontWeight.bold,
+          fontSize: 30,
         ),
         labelLarge: base.textTheme.labelLarge?.copyWith(
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.bold,
+          fontSize: 15,
         ),
         labelMedium: base.textTheme.labelMedium?.copyWith(
           fontWeight: FontWeight.w400,
@@ -57,9 +59,15 @@ ThemeData _buildStylingTheme(){
         bodyLarge: base.textTheme.bodyLarge?.copyWith(
           fontWeight: FontWeight.w400,
         ),
+      
       ).apply(
-        fontFamily: 'TTNorms'
-      )
+        fontFamily: 'TTNorms',
+        displayColor: kStylingBlack900,
+        bodyColor: kStylingBlack900
+      ),
+      textSelectionTheme: const TextSelectionThemeData(
+      selectionColor: kStylingBlack900,
+    ),
   );
 }
 

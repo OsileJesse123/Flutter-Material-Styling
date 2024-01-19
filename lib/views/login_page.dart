@@ -16,31 +16,51 @@ class LoginPage extends StatelessWidget {
 
   Widget _loginBackground(BuildContext context, ThemeData theme){
     return  SizedBox(
-      height: 400,
+      height: double.maxFinite,
       width: double.maxFinite,
       child: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(loginBackgroundImage),
+            image: AssetImage(loginBackgroundImage2),
             fit: BoxFit.fill
           )
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 350),
+          child: Container(
+            color: theme.colorScheme.background,
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 50, 16, 20),
+              child: Column(
+                children: [
+                  Text(
+                    'Discover more from your neighboorood'.hardcoded,
+                    style: theme.textTheme.displayLarge,
+                  ),
+                  const SizedBox(height: 16,),
+                  ElevatedButton(
+                    onPressed: (){
+
+                  },
+                  style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      backgroundColor: theme.colorScheme.primary,
+                      foregroundColor: theme.colorScheme.onPrimary,
+                      textStyle: theme.textTheme.labelLarge,
+                      minimumSize: const Size.fromHeight(40),
+                    ), 
+                  child: Text('Continue with email'.hardcoded,),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );
   }
 }
 
-/*
-SvgPicture.asset(
-doorDashLogo,
-width: 200.0,
-height: 200.0,
-),
-const SizedBox(width: 8.0,),
-Text(
-'DOORDASH'.hardcoded,
-style: theme.textTheme.displayMedium?.copyWith(
-color: theme.primaryColor
-),
-),
-*/
+
+
+
