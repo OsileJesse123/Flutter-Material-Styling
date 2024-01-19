@@ -40,6 +40,7 @@ ThemeData _buildStylingTheme(){
           onBackground: kStylingBlack900,
           surface: Colors.white,
           onSurface: kStylingBlack900,
+          outline: kStylingGrey200,
       ),
       textTheme: base.textTheme.copyWith(
         displayLarge: base.textTheme.displayLarge?.copyWith(
