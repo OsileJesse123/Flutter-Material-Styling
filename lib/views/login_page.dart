@@ -60,12 +60,13 @@ class LoginPage extends StatelessWidget {
           )
         ),
         child: Padding(
-          padding: const EdgeInsets.only(top: 300),
+          padding: const EdgeInsets.only(top: 270),
           child: ShaderMask(
             shaderCallback: (bounds) => _maskingGradient.createShader(bounds),
             blendMode: BlendMode.dstIn,
             child: Container(
               color: theme.colorScheme.background,
+            
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(16, 130, 16, 0),
                 child: Column(
@@ -94,12 +95,16 @@ class LoginPage extends StatelessWidget {
                     _continueWithButton(SvgPicture.asset(facebookIcon, width: buttonIconSize, height: buttonIconSize,), Text('Continue with Facebook'.hardcoded), theme),
                     gapH4,
                     _continueWithButton(SvgPicture.asset(appleIcon, width: buttonIconSize, height: buttonIconSize,), Text('Continue with Apple'.hardcoded), theme),
-                    gapH20,
-                    Text(
+                    gapH8,
+                    TextButton(onPressed: (){
+
+                    }, 
+                    child: Text(
                       'Search Nearby'.hardcoded,
                       style: theme.textTheme.labelLarge,
+                      ),
                     ),
-                    gapH20,
+                    gapH8,
                     Divider(
                       thickness: 1,
                       color: theme.colorScheme.outline,
