@@ -8,6 +8,7 @@ const loginRoute = '/login';
 const loginBackgroundImage = 'assets/images/screen_bg.png';
 const loginBackgroundImage2 = 'assets/images/dash_door_bg_img.jpeg';
 const doorDashLogo = 'assets/images/doordash_icon.svg';
+const doorDashBg = 'assets/images/door_dash_sketch_bg.png';
 const appleIcon = 'assets/images/apple_icon.svg';
 const facebookIcon = 'assets/images/facebook_icon.svg';
 const googleIcon = 'assets/images/google_icon.svg';
