@@ -1,4 +1,4 @@
-import 'dart:developer';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_material_styling/util/colors.dart';
@@ -28,10 +28,10 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  Widget _continueWithButton(Widget icon, Text label, ThemeData theme){
+  Widget _continueWithButton(Widget icon, Text label, ThemeData theme,){
     return ElevatedButton(
       onPressed: (){
-
+        
     }, 
     style: ElevatedButton.styleFrom(
       elevation: 0,
@@ -85,7 +85,7 @@ class LoginPage extends StatelessWidget {
                           gapH16,
                           ElevatedButton(
                             onPressed: (){
-                          
+                              Navigator.pushNamed(context, dashboardRoute);
                           },
                           style: ElevatedButton.styleFrom(
                               elevation: 0,

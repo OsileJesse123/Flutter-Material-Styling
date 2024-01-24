@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_material_styling/util/colors.dart';
 import 'package:flutter_material_styling/util/constants.dart';
+import 'package:flutter_material_styling/views/dashboard_page.dart';
 import 'package:flutter_material_styling/views/login_page.dart';
 
 void main() {
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       home: const LoginPage(),
       routes: {
         loginRoute: (BuildContext context) => const LoginPage(),
+        dashboardRoute: (BuildContext context) => const DashboardPage(),
       },
     );
   }

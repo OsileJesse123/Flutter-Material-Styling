@@ -1,8 +1,9 @@
 
-// Routes
 import 'package:flutter/material.dart';
 
+// Routes
 const loginRoute = '/login';
+const dashboardRoute = '/dashboard';
 
 // Images
 const loginBackgroundImage = 'assets/images/screen_bg.png';
