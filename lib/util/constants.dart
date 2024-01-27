@@ -19,6 +19,7 @@ const buttonIconSize = 18.0;
 const buttonHeight = 40.0;
 const gapH4 = SizedBox(height: 4,);
 const gapH8 = SizedBox(height: 8,);
+const gapW8 = SizedBox(width: 8,);
 const gapH16 = SizedBox(height: 16,);
 const gapH20 = SizedBox(height: 20,);
 const gapW16 = SizedBox(width: 16,);
