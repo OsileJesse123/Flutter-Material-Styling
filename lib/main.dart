@@ -31,6 +31,14 @@ ThemeData _buildStylingTheme(){
   final ThemeData base = ThemeData.light(useMaterial3: true);
   return base.copyWith(
       scaffoldBackgroundColor: Colors.white,
+      bottomNavigationBarTheme: base.bottomNavigationBarTheme.copyWith(
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
+        unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 11),
+        unselectedItemColor: kStylingGrey800,
+        selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 11),
+        selectedItemColor: kStylingRed800,
+      ),
       colorScheme: base.colorScheme.copyWith(
           background: Colors.white,
           brightness: Brightness.light,

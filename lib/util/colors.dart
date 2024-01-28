@@ -12,4 +12,5 @@ const kStylingGrey100 = Color(0xFFF6F6F6);
 const kStylingBlue50 = Color(0xFFDBF8FA);
 const kStylingBlue800 = Color(0xFF0A828D);
 const kStylingGrey700 = Color(0xFF606060);
+const kStylingGrey800 = Color(0xFF616161);
 const kStylingYellow600 = Color(0xFFE9C600);
