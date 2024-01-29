@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_material_styling/util/colors.dart';
 import 'package:flutter_material_styling/util/constants.dart';
 import 'package:flutter_material_styling/util/extensions.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -28,13 +30,18 @@ class _DashboardPageState extends State<DashboardPage> {
       case 4:
         return Container();
       default:
-        throw UnimplementedError('No implemented screen for this index!');
+        throw Container();
     }
+  }
+
+  Color _determineIconColor(int selectedIndex, ThemeData theme){
+    return _selectedIndex == selectedIndex ? theme.bottomNavigationBarTheme.selectedItemColor ?? kStylingRed800 : theme.bottomNavigationBarTheme.unselectedItemColor ?? kStylingGrey800;
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    
     return Scaffold(
       appBar: AppBar(
         leadingWidth: 220,
@@ -88,32 +95,36 @@ class _DashboardPageState extends State<DashboardPage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: const Icon(
-              Icons.home
-            ),
+            icon: SvgPicture.asset(
+              doorDashLogo,
+              colorFilter: ColorFilter.mode(_determineIconColor(0, theme), BlendMode.srcATop),
+              ),
             label: 'Home'.hardcoded
           ),
           BottomNavigationBarItem(
-            icon: const Icon(
-              Icons.home
+            icon: SvgPicture.asset(
+              groceryIcon,
+              width: 25,
+              height: 25,
+              colorFilter: ColorFilter.mode(_determineIconColor(1, theme), BlendMode.srcATop),
             ),
             label: 'Grocery'.hardcoded
           ),
           BottomNavigationBarItem(
             icon: const Icon(
-              Icons.home
+              Icons.shopping_bag_outlined
             ),
             label: 'Retail'.hardcoded
           ),
           BottomNavigationBarItem(
             icon: const Icon(
-              Icons.home
+              Icons.search
             ),
             label: 'Browse'.hardcoded
           ),
           BottomNavigationBarItem(
             icon: const Icon(
-              Icons.home
+              Icons.note
             ),
             label: 'Orders'.hardcoded
           ),
