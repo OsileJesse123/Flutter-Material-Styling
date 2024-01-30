@@ -38,6 +38,8 @@ ThemeData _buildStylingTheme(){
         unselectedItemColor: kStylingGrey800,
         selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 11),
         selectedItemColor: kStylingRed800,
+        backgroundColor: Colors.white,
+        elevation: 5,
       ),
       colorScheme: base.colorScheme.copyWith(
           background: Colors.white,

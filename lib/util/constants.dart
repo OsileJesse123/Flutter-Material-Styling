@@ -11,6 +11,7 @@ const loginBackgroundImage2 = 'assets/images/dash_door_bg_img.jpeg';
 const doorDashLogo = 'assets/images/doordash_icon.svg';
 const groceryIcon = 'assets/images/banana_icon.svg';
 const browseIcon = 'assets/images/search_sort.svg';
+const ordersIcon = 'assets/images/note_icon.svg';
 const doorDashBg = 'assets/images/door_dash_sketch_bg.png';
 const appleIcon = 'assets/images/apple_icon.svg';
 const facebookIcon = 'assets/images/facebook_icon.svg';

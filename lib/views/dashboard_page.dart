@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_material_styling/util/colors.dart';
 import 'package:flutter_material_styling/util/constants.dart';
 import 'package:flutter_material_styling/util/extensions.dart';
+import 'package:flutter_material_styling/views/home_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -20,7 +21,7 @@ class _DashboardPageState extends State<DashboardPage> {
   Widget _page(){
     switch(_selectedIndex){
       case 0:
-        return Container();
+        return const HomePage();
       case 1:
         return Container();
       case 2:
@@ -123,8 +124,9 @@ class _DashboardPageState extends State<DashboardPage> {
             label: 'Browse'.hardcoded
           ),
           BottomNavigationBarItem(
-            icon: const Icon(
-              Icons.note
+            icon: SvgPicture.asset(
+              ordersIcon,
+              colorFilter: ColorFilter.mode(_determineIconColor(4, theme), BlendMode.srcATop),
             ),
             label: 'Orders'.hardcoded
           ),
