@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       padding: const EdgeInsets.only(left: 16, right: 16,),
       child: Column(
         children: [
-          gapH20,
+          gapH16,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -39,7 +39,6 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              
               Container(
                 constraints: BoxConstraints.tight(Size.fromRadius(20)),
                 decoration: BoxDecoration(
@@ -61,7 +60,10 @@ class HomePage extends StatelessWidget {
                     child: Icon(Icons.map_outlined,),),),
               )
             ],
-          )
+          ),
+          gapH16,
+
+
         ],
       ),
     );
