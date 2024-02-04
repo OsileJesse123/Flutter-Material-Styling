@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_material_styling/util/constants.dart';
+import 'package:flutter_material_styling/util/extensions.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -15,32 +16,31 @@ class HomePage extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Container(
-                constraints: BoxConstraints.expand(width: 300, height: 43),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5), // Customize the shadow color
-                      spreadRadius: 1,
-                      blurRadius: 12,
-                      offset: const Offset(0, 1), // Changes the position of the shadow
-                    ),
-                  ]
-                ),
-                child: TextField(
-                  decoration: InputDecoration(
-                    label: const Text('Search DoorDash'),
-                    filled: true,
-                    fillColor: theme.colorScheme.background,
-                    border: const OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(32),),
-                      borderSide: BorderSide.none
+              Material(
+                elevation: 5,
+                borderRadius: const BorderRadius.all(Radius.circular(32),),
+                child: SizedBox(
+                  width: 300,
+                  child: TextField(
+                    cursorColor: theme.colorScheme.onBackground,
+                    cursorHeight: 18,
+                    decoration: InputDecoration(
+                      prefixIcon: const Icon(Icons.search),
+                      hintText: 'Search DoorDash'.hardcoded,
+                      hintStyle: theme.textTheme.bodySmall?.copyWith(fontSize: 14),
+                      filled: true,
+                      contentPadding: const EdgeInsets.fromLTRB(0, 5, 12, 5),
+                      fillColor: theme.colorScheme.background,
+                      border: const OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(32),),
+                        borderSide: BorderSide.none
+                      ),
                     ),
                   ),
                 ),
               ),
               Container(
-                constraints: BoxConstraints.tight(Size.fromRadius(20)),
+                constraints: BoxConstraints.tight(Size.fromRadius(23)),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: theme.colorScheme.background,

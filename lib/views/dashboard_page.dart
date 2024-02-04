@@ -3,6 +3,7 @@ import 'package:flutter_material_styling/util/colors.dart';
 import 'package:flutter_material_styling/util/constants.dart';
 import 'package:flutter_material_styling/util/extensions.dart';
 import 'package:flutter_material_styling/views/home_page.dart';
+import 'package:flutter_material_styling/views/unimplemented_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -23,15 +24,15 @@ class _DashboardPageState extends State<DashboardPage> {
       case 0:
         return const HomePage();
       case 1:
-        return Container();
+        return const UnimplementedPage();
       case 2:
-        return Container();  
+        return const UnimplementedPage();
       case 3:
-        return Container();
+        return const UnimplementedPage();
       case 4:
-        return Container();
+        return const UnimplementedPage();
       default:
-        throw Container();
+        return const UnimplementedPage();
     }
   }
 
