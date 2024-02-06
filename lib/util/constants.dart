@@ -17,6 +17,19 @@ const appleIcon = 'assets/images/apple_icon.svg';
 const facebookIcon = 'assets/images/facebook_icon.svg';
 const googleIcon = 'assets/images/google_icon.svg';
 
+// Category Icons
+const dashMartIcon = 'assets/images/dash_mart.svg';
+const convenienceIcon = 'assets/images/convenience.svg';
+const localChefsIcon = 'assets/images/local_chefs.svg';
+const holidayDeals = 'assets/images/holiday_deals.svg';
+const groceryDealsIcon = 'assets/images/grocery.svg';
+const acclaimedIcon = 'assets/images/acclaimed.svg';
+const mexicanIcon = 'assets/images/mexican.svg';
+const breakfastIcon = 'assets/images/breakfast.svg';
+const fastFoodIcon = 'assets/images/fast_food.svg';
+const pizzaIcon = 'assets/images/pizza.svg';
+const soup = 'assets/images/soup.svg';
+
 // Sizes
 const buttonIconSize = 18.0;
 const buttonHeight = 40.0;
