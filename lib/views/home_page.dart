@@ -85,8 +85,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-        ),
-        
+        ), 
         Expanded(
           flex: 3,
           child: Column(
