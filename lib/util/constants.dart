@@ -16,6 +16,8 @@ const doorDashBg = 'assets/images/door_dash_sketch_bg.png';
 const appleIcon = 'assets/images/apple_icon.svg';
 const facebookIcon = 'assets/images/facebook_icon.svg';
 const googleIcon = 'assets/images/google_icon.svg';
+const offersIcon = 'assets/images/offers_icon.svg';
+const ratingsIcon = 'assets/images/ratings_icon.svg';
 
 // Category Icons
 const dashMartIcon = 'assets/images/dash_mart.svg';
@@ -33,6 +35,7 @@ const soup = 'assets/images/soup.svg';
 // Sizes
 const buttonIconSize = 18.0;
 const buttonHeight = 40.0;
+const gapW4 = SizedBox(width: 4,);
 const gapH4 = SizedBox(height: 4,);
 const gapH8 = SizedBox(height: 8,);
 const gapW8 = SizedBox(width: 8,);
