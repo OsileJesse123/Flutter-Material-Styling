@@ -47,6 +47,7 @@ ThemeData _buildStylingTheme(){
           brightness: Brightness.light,
           primary: kStylingRed800,
           onPrimary: Colors.white,
+          primaryContainer: kStylingOrange900,
           secondary: kStylingBlue800,
           onSecondary: kStylingBlue50,
           error: kStylingRed900,

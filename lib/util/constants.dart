@@ -18,6 +18,7 @@ const facebookIcon = 'assets/images/facebook_icon.svg';
 const googleIcon = 'assets/images/google_icon.svg';
 const offersIcon = 'assets/images/offers_icon.svg';
 const ratingsIcon = 'assets/images/ratings_icon.svg';
+const doordashSalesImage = 'assets/images/doordash_sales_image.png';
 
 // Category Icons
 const dashMartIcon = 'assets/images/dash_mart.svg';

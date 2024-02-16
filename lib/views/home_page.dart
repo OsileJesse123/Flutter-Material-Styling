@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_material_styling/repository/repository.dart';
+import 'package:flutter_material_styling/util/colors.dart';
 import 'package:flutter_material_styling/util/constants.dart';
 import 'package:flutter_material_styling/util/extensions.dart';
 import 'package:flutter_material_styling/widgets/category_item_widget.dart';
 import 'package:flutter_material_styling/widgets/category_item_widget_2.dart';
 import 'package:flutter_material_styling/widgets/filter_item_widget.dart';
+import 'package:flutter_material_styling/widgets/sales_item_widget.dart';
+import 'package:flutter_material_styling/widgets/sales_item_widget_2.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatefulWidget {
@@ -106,7 +109,7 @@ class _HomePageState extends State<HomePage> {
               Divider(color: theme.dividerColor, thickness: 2,),
               gapH8,
               SizedBox(
-                height: 80,
+                height: 75,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   padding: const EdgeInsets.only(left: 16, right: 16),
@@ -133,7 +136,48 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+              gapH16,
+              SizedBox(
+                height: 160,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  clipBehavior: Clip.none,
+                  children: const [
+                    gapW16,
+                    SalesItemWidget(),
+                    gapW8,
+                    SalesItemWidget2()
+                  ],
+                ),
+              ),
+              gapH16,
+              Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Saved stores'.hardcoded,
+                      style: theme.textTheme.labelLarge?.copyWith(
+                        fontSize: 19,
+                      ),
+                    ),
+                    ElevatedButton(
+                      onPressed: (){
               
+                      },
+                      style: ElevatedButton.styleFrom(
+                        shape: const CircleBorder(),
+                        padding: const EdgeInsets.all(4),
+                        backgroundColor: kStylingGrey200,
+                        foregroundColor: theme.colorScheme.onBackground,
+                        elevation: 0,
+                      ), 
+                      child: const Icon(Icons.arrow_forward, size: 18,),
+                    ),
+                  ],
+                ),
+              )
             ],
           )
         )
