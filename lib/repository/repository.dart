@@ -25,5 +25,44 @@ class DashRepository{
     ];
   }
 
-
+  List<SavedStores> getSavedStores(){
+    return [
+      const SavedStores(
+        storeImagePath: chucksDonutImage, 
+        storeName: 'Chuck\'s Donut Inc', 
+        storeDistance: 2.2, 
+        storePoints: 9800, 
+        isFavorite: true, 
+        storeRating: 4.8, 
+        storeTime: 22,
+      ),
+      const SavedStores(
+        storeImagePath: dennysImage, 
+        storeName: 'Denny\'s', 
+        storeDistance: 3.2, 
+        storePoints: 6800, 
+        isFavorite: true, 
+        storeRating: 4.3, 
+        storeTime: 32,
+      ),
+      const SavedStores(
+        storeImagePath: bominosImage, 
+        storeName: 'Bominos', 
+        storeDistance: 2.2, 
+        storePoints: 9800, 
+        isFavorite: false, 
+        storeRating: 4.8, 
+        storeTime: 22,
+      ),
+      const SavedStores(
+        storeImagePath: chucksDonutImage, 
+        storeName: 'Chuck\'s Donut Inc', 
+        storeDistance: 2.2, 
+        storePoints: 9800, 
+        isFavorite: true, 
+        storeRating: 4.3, 
+        storeTime: 22,
+      ),
+    ];
+  }
 }

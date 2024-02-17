@@ -19,6 +19,9 @@ const googleIcon = 'assets/images/google_icon.svg';
 const offersIcon = 'assets/images/offers_icon.svg';
 const ratingsIcon = 'assets/images/ratings_icon.svg';
 const doordashSalesImage = 'assets/images/doordash_sales_image.png';
+const chucksDonutImage = 'assets/images/donut_image.jpeg';
+const dennysImage = 'assets/images/burger_fries.webp';
+const bominosImage = 'assets/images/pizza.jpeg';
 
 // Category Icons
 const dashMartIcon = 'assets/images/dash_mart.svg';

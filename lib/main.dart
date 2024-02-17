@@ -32,6 +32,7 @@ ThemeData _buildStylingTheme(){
   return base.copyWith(
       scaffoldBackgroundColor: Colors.white,
       dividerColor: kStylingGrey200,
+      disabledColor: kStylingGrey800,
       bottomNavigationBarTheme: base.bottomNavigationBarTheme.copyWith(
         showSelectedLabels: true,
         showUnselectedLabels: true,
