@@ -28,10 +28,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final screenHeight = MediaQuery.of(context).size.height;
 
     return SingleChildScrollView(
       child: SizedBox(
-        height: MediaQuery.of(context).size.height + lastSizedBoxHeight/10 ,
+        height: screenHeight + screenHeight/12 ,
         child: Column(
           children: [
             gapH16,
